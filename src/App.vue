@@ -17,6 +17,11 @@ export default {
 </script>
 
 <style>
+body{
+  background: #f2f3f5;
+  background-image: linear-gradient(#f2f3f5 13.5px,transparent 0),linear-gradient(90deg,rgba(11,17,28,.3) 1.5px,transparent 0);
+  background-size: 15px 15px,15px 15px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
