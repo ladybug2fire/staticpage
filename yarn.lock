@@ -5169,6 +5169,14 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "http://r.npm.sankuai.com/posix-character-classes/download/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
 
+post-commit@^0.0.1:
+  version "0.0.1"
+  resolved "http://r.npm.sankuai.com/post-commit/download/post-commit-0.0.1.tgz#4e15066dc376275677e18bbde32a2e0dceaa1a76"
+  dependencies:
+    cross-spawn "^5.0.1"
+    spawn-sync "^1.0.15"
+    which "1.2.x"
+
 postcss-calc@^7.0.1:
   version "7.0.1"
   resolved "http://r.npm.sankuai.com/postcss-calc/download/postcss-calc-7.0.1.tgz#36d77bab023b0ecbb9789d84dcb23c4941145436"

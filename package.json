@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "ga": "git add"
+    "ga": "git add",
+    "publish": "git push --all"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -20,6 +21,7 @@
     "copy-webpack-plugin": "^5.0.4",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "post-commit": "^0.0.1",
     "pre-commit": "^1.2.2",
     "vue-template-compiler": "^2.6.10"
   },
@@ -42,7 +44,13 @@
       "autoprefixer": {}
     }
   },
-  "pre-commit": [ "build", "ga" ],
+  "pre-commit": [
+    "build",
+    "ga"
+  ],
+  "post-commit":[
+    "publish"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions"
