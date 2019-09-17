@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "ga": "git add .",
-    "gp": "git push"
+    "ga": "git add"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -43,7 +42,7 @@
       "autoprefixer": {}
     }
   },
-  "pre-commit": [ "build", "ga", "gp" ],
+  "pre-commit": [ "build", "ga" ],
   "browserslist": [
     "> 1%",
     "last 2 versions"
