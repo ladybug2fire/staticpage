@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     diff() {
-      return moment()
+      return this.now 
         .startOf("day")
         .diff(moment(this.target), "days");
     }
