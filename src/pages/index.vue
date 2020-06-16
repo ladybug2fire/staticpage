@@ -26,18 +26,20 @@ export default {
   data() {
     return {
       now: moment(),
+      day: moment(),
       target: moment(store.get("target")).startOf()
     };
   },
   computed: {
     diff() {
-      return this.now 
+      return this.day 
         .startOf("day")
         .diff(moment(this.target), "days");
     }
   },
   mounted() {
     setInterval(() => (this.now = moment()), 1000);
+    setInterval(() => (this.day = moment()), 60000);
   },
   methods: {
     handleTargetChange(v) {
